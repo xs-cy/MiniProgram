@@ -14,7 +14,7 @@ import java.util.Properties;
 @SpringBootTest(classes = TestReadResource.class)
 public class TestReadResource {
 
-    @Value("#{(new com.example.program.config.ResourceConfig().loadProperties('application.properties'))}")
+    @Value("#{(new com.example.program.util.ResourceConfig().loadProperties('application.properties'))}")
     private Properties properties;
 
     @Test
